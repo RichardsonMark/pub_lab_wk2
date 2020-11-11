@@ -1,6 +1,6 @@
 class Pub:
-    def __init__(self, name, till, drinks):
+    def __init__(self, name, till, drink):
         self.name = name
         self.till = till
-        self.drinks = drinks
+        self.drink = drink
 
