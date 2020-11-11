@@ -15,3 +15,4 @@ class Pub:
             self.till += drink_choice.price
             customer.buy_drink(drink_choice)
 
+    # add a function to refuse customer who has reached maximum drunk!
