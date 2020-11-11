@@ -5,7 +5,7 @@ from src.drink import Drink
 
 class TestCustomer(unittest.TestCase):
     def setUp(self):
-        self.customer = Customer("Andrew Carnegie", 30)
+        self.customer = Customer("Andrew Carnegie", 30, 185)
 
     # @unittest.skip("Delete this line to run the test")
     def test_customer_has_name(self):
@@ -21,3 +21,6 @@ class TestCustomer(unittest.TestCase):
         self.customer.buy_drink(drink_choice)
         self.assertEqual(23, self.customer.wallet)
 
+   # @unittest.skip("Delete this line to run the test")
+    def test_customer_has_age(self):
+        self.assertEqual(185, self.customer.age)
